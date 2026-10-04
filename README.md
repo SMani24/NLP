@@ -1,29 +1,29 @@
-# NLP Coursework
+# Natural Language Processing Assignments
 
-Natural language processing computer assignments, grouped by assignment in `CA1` through `CA5`.
+Assignments from my Natural Language Processing course, covering tokenization and statistical language models, text classification, word embeddings, Transformer fine-tuning, and document retrieval.
 
-| Location | Contents |
+Most of the work is in Jupyter notebooks, alongside the assignment instructions, explanations, experiments, and saved outputs. The notebooks include both Persian and English text.
+
+## Assignments
+
+| Assignment | Topics |
 | --- | --- |
-| `CA1/`–`CA3/` | Completed assignment notebooks and their local datasets |
-| `CA4/Q1/`, `CA5/Q1/`, `CA5/Q2/` | Completed notebooks for individual questions |
-| `CA*/templates/` | Original assignment templates, including Python exports |
-| `CA1/images/` | Model comparison images |
-| `CA4/workshops/`, `CA5/workshops/` | Hands-on notebooks and workshop recordings |
-| `CA5/materials/` | Original assignment ZIP |
-| `scratch/`, `CA1/scratch/`, `CA3/NLP_CA3_Draft.ipynb` | Experiments and unfinished work |
-| `archive/` | Preserved installation logs, macOS metadata, and download markers |
+| [CA1 — Tokenization and language modeling](CA1/NLP_CA1_Mirshabani_810801080.ipynb) | Regex, edit-distance spelling correction, BPE and WordPiece tokenizers, and Persian n-gram models with smoothing and temperature sampling. |
+| [CA2 — Text classification](CA2/NLP_CA2_Mirshabani_810801080.ipynb) | Manual implementations of logistic regression and multinomial Naive Bayes for spam detection, followed by phishing-URL classification with different feature sets. |
+| [CA3 — Word embeddings and neural classification](CA3/NLP_CA3_Mirshabani_810801080.ipynb) | CBOW and Skip-Gram models in PyTorch, embedding similarity and visualization, and AG News classification using pretrained FastText vectors and an MLP. |
+| [CA4 Q1 — Text-to-SQL](CA4/Q1/NLP_CA4_Q1_Mirshabani_810801080.ipynb) | Fine-tuning BART and GPT-2 to generate SQL from questions and database schemas, with exact-match evaluation and error analysis. |
+| [CA4 Q2 — Instruction following](CA4/templates/NLP_CA4_Q2_Template.ipynb) | Assignment template for LoRA fine-tuning and IFEval evaluation; the implementation is not included. |
+| [CA5 Q1 — Legal-document retrieval](CA5/Q1/NLP_CA5_Q1_Mirshabani_810801080.ipynb) | Partial work on Persian PDF extraction, DeepSeek OCR, article chunking, embeddings, and a retrieval agent. |
+| [CA5 Q2 — Travel assistant](CA5/Q2/NLP_CA5_Q2_Mirshabani_810801080.ipynb) | Initial setup for a LangGraph travel assistant; most of the implementation is still unfinished. |
 
-## Naming
+## Finding your way around
 
-- Completed notebooks: `NLP_CA<number>[_Q<number>]_Mirshabani_810801080.ipynb`.
-- Templates: `NLP_CA<number>[_Q<number>]_Template.<extension>`.
-- Workshop notebooks: `NLP_CA<number>[_Q<number>]_HandsOn.ipynb`.
-- Supporting folders and renamed media files use lowercase names with underscores between words.
+Each `CA` folder contains its notebooks and related data. Original assignment prompts are kept in `templates/`, while workshop notebooks and recordings are under `workshops/`. Drafts and small experiments are kept alongside the assignments or in `scratch/`.
 
-Dataset names and locations referenced by the notebooks are preserved, including `CA1/emails.txt`, `CA1/vocab.txt`, `CA2/datasets/`, `CA3/Q1/`, and the question datasets in `CA5/`. Run completed notebooks from their containing directories; run the CA3 draft from `CA3/`. Some notebooks use Google Colab or Google Drive paths and require the setup described in their cells.
+The main libraries used across the completed work are NumPy, pandas, scikit-learn, PyTorch, Hugging Face Datasets and Transformers, and FastText.
 
-## Large local files
+## Running the notebooks
 
-The FastText model `CA3/wiki-news-300d-1M-subword.bin`, its ZIP, and `CA3/model-archive/` remain excluded through `.gitignore`. They are not included in the repository. The CA3 notebook contains the original model download link.
+Open a notebook in Jupyter, VS Code, or Google Colab and check its setup cells before running it. For notebooks that use local data, use the notebook's directory as the working directory. Some later notebooks use Colab paths, Google Drive, a GPU, or external APIs and need the corresponding setup.
 
-Existing file contents were preserved during the organization; this README documents the layout.
+The large FastText model used in CA3 is excluded from Git. Its download commands are included in the notebook. Pretrained models and some datasets also need to be downloaded when running the assignments.
