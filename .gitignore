@@ -1,1 +1,6 @@
 /envNLP/**
+
+# Large local model files excluded from version control.
+/CA3/wiki-news-300d-1M-subword.bin
+/CA3/wiki-news-300d-1M-subword.bin.zip
+/CA3/model-archive/
