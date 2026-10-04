@@ -13,8 +13,8 @@ Most of the work is in Jupyter notebooks, alongside the assignment instructions,
 | [CA3 — Word embeddings and neural classification](CA3/NLP_CA3_Mirshabani_810801080.ipynb) | CBOW and Skip-Gram models in PyTorch, embedding similarity and visualization, and AG News classification using pretrained FastText vectors and an MLP. |
 | [CA4 Q1 — Text-to-SQL](CA4/Q1/NLP_CA4_Q1_Mirshabani_810801080.ipynb) | Fine-tuning BART and GPT-2 to generate SQL from questions and database schemas, with exact-match evaluation and error analysis. |
 | [CA4 Q2 — Instruction following](CA4/templates/NLP_CA4_Q2_Template.ipynb) | Assignment template for LoRA fine-tuning and IFEval evaluation; the implementation is not included. |
-| [CA5 Q1 — Legal-document retrieval](CA5/Q1/NLP_CA5_Q1_Mirshabani_810801080.ipynb) | Partial work on Persian PDF extraction, DeepSeek OCR, article chunking, embeddings, and a retrieval agent. |
-| [CA5 Q2 — Travel assistant](CA5/Q2/NLP_CA5_Q2_Mirshabani_810801080.ipynb) | Initial setup for a LangGraph travel assistant; most of the implementation is still unfinished. |
+| [CA5 Q1 — Legal-document retrieval](CA5/Q1/NLP_CA5_Q1_Mirshabani_810801080.ipynb) | Persian PDF extraction, DeepSeek OCR, article chunking, embeddings, and a LangGraph agent with retrieval, reranking, and answer generation. Evaluation and UI remain unfinished. |
+| [CA5 Q2 — Travel assistant](CA5/Q2/NLP_CA5_Q2_Mirshabani_810801080.ipynb) | Airport-data preparation and city-to-airport mapping for a LangGraph travel assistant; most of the implementation is still unfinished. |
 
 ## Finding your way around
 
